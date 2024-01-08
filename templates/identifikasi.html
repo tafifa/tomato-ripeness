@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Image</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body onload="showSection('result')">
+
+    <div id="result" class="section">
+        <h1>Tomato Ripeness Identification</h1>
+        <div class="image-container">
+          <p>Image Path: {{ image_path }}</p>
+            {% if image_path %}
+                <img src="{{ url_for('static', filename=image_path) }}" alt="Image can't be displayed">
+            {% else %}
+                <p>No image available</p>
+            {% endif %}
+            <div class="res-container">
+                <div class="res">
+                    {% if result == 'Ripe' %}
+                        <p style="color: red;"><span>Tomato is {{ result }}</span></p>
+                    {% else %}
+                        <p style="color: green;"><span>Tomato is {{ result }}</span></p>
+                    {% endif %}
+                </div>
+            </div>
+            
+
+        </div>
+        <button class="btn btn-reddark" onclick="window.location.href='/'">Back</button>
+
+    </div>
+    
+</body>
+<script>
+    function showSection(sectionId) {
+      // Hide all sections
+      var sections = document.getElementsByClassName('section');
+      for (var i = 0; i < sections.length; i++) {
+        sections[i].classList.remove('active');
+      }
+
+      // Show the selected section
+      var section = document.getElementById(sectionId);
+      section.classList.add('active');
+    }
+
+    document.getElementById
+</script>
+</html>

@@ -1,0 +1,8 @@
+flask
+opencv-python
+datetime
+pillow
+numpy
+pathlib
+pandas
+scikit-learn

@@ -1,0 +1,250 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div, article, aside, section, header, main, img, banner, main, footer {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Century Gothic', sans-serif;
+}
+
+#select-choices, #capture, #upload, #result {
+  background-image: url('../picture/bg-1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+.container {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.container img {
+  width: 30%;
+  /* height: 50%; */
+}
+
+#home img, #main img, #about img {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+}
+
+.con p {
+  color: white;
+  font-weight: bold;
+  font-size:x-large;
+}
+
+.red-banner {
+  display: flex;
+  justify-content: center;
+  background-color: #D52E2E;
+  padding: 15px 0 15px 0;
+}
+
+.red-banner-btn a {
+  padding: 0 50px 0 50px;
+  font-weight: bold;
+  color: #5F0000;
+  text-decoration: none;
+}
+
+.red-banner-btn a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.con-main {
+  padding: 180px 0;
+}
+
+.container {
+  display: flex;
+}
+
+.con {
+  width: 50%;
+}
+
+.section {
+  display: none;
+}
+
+/* CSS styles for the active section */
+.active {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+}
+
+.container-left, .container-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  padding: 20px;
+}
+
+.container-upload, .container-capture {
+  padding: 30px 0;
+  text-align: center;
+  padding: 50px;
+}
+
+button {
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  width: 70%;
+  margin: 5px auto;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.container-right p,
+.container-right a {
+  margin-bottom: 10px;
+}
+
+.container-right a {
+  /* border: 1px solid black; */
+  padding: 10px;
+  background-color: rgb(0, 194, 0);
+  color: white;
+  text-decoration: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#video {
+  display: block;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.image-container {
+  text-align: center;
+  margin: 50px 0;
+}
+.image-container img {
+  max-width: 400px;
+  max-height: 400px;
+  padding: 30px 0;
+}
+
+input[type="file"] {
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #555;
+}
+
+.btncon {
+  margin-top: 30px;
+}
+
+.btn-redpale {
+  background-color:  rgb(136, 50, 50);
+  
+}
+
+.btn-redpale:hover {
+  background-color: #550b0b;
+  
+}
+
+.btn-redlight {
+  background-color: #D52E2E;
+}
+
+.btn-redlight:hover {
+  background-color: #9d2020;
+}
+
+.btn-reddark {
+  background-color: rgb(108, 0, 0);
+  margin-top: 40px;
+}
+
+.btn-reddark:hover {
+  background-color: rgb(76, 11, 11);
+}
+
+.btn-green {
+  background-color: rgb(48, 167, 48);
+}
+
+.btn-green:hover {
+  background-color: rgb(3, 88, 3);
+}
+
+.btn-white {
+  background-color: rgb(255, 202, 202);
+  color:#D52E2E;
+}
+
+.btn-white:hover {
+  background-color: rgb(218, 170, 170);
+}
+
+#select-choices {
+  padding: 30px 0;
+}
+
+.con-in, #result {
+  height: 100vh;
+}
+
+#result span {
+  font-weight: bold;
+}
+
+.res-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.res {
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 40px;
+  font-size: 16px;
+  background-color: white;
+}
